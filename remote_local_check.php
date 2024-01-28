@@ -14,7 +14,7 @@ $local_version = $kv['AppState']['buildid'];
 
 if($local_version === $remote_version)
 {
-	echo "Your version is up to date! No need to update";
+	echo "Error, your version is newer then the remote, this should never happen";
 }
 else
 {
@@ -24,7 +24,7 @@ else
 	}
 	else if($local_version < $remote_version)
 	{
-		echo "Error, your version is newer then the remote version";
+		echo "Error, your version is newer then the remote version. <br>Please update your server.";
 	}	
 	else
 	{
