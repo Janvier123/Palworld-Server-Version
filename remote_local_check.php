@@ -25,7 +25,6 @@ else
 	else if($local_version < $remote_version)
 	{
 		echo "There is a new version for your server, please update it";
-		msg_discord("There is a new version for your server, please update it");
 	}	
 	else
 	{
